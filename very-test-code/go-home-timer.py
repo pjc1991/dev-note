@@ -16,7 +16,7 @@ def main():
     go_home_time = datetime.datetime.strptime(go_home_time, "%H:%M").time()
     minutes = calculate_time_until_go_home(go_home_time)
     hours, minutes = minutes_to_hours_minutes(minutes)
-    print("Time until go home: {} hours and {} minutes until home".format(hours, minutes))
+    print("You will go home at: {}, Time until go home: {} hours and {} minutes until home".format(go_home_time, hours, minutes))
 
 if __name__ == "__main__":
     main()
